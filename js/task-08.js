@@ -11,7 +11,7 @@ function onFormSubmit(event) {
     console.log('email:', mail, 'password:', password);
 
     if (mail && password !== '') {
-        return;
+        event.currentTarget.reset();
     } else {
         alert('Все поля должны быть заполнены')
     }
